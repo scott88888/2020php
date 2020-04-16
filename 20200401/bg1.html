@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bg6</title>
+  <style>
+body {
+  text-align: center;
+}
+table {
+  margin: 1rem;
+  display: inline-block;
+}
+table,
+tr,
+td {
+  border: 1px solid #000;
+}
+table td {
+  width: 200px;
+  height: 200px;
+}
+
+
+.a{
+  background-color: red;
+}
+
+.b {
+  background: url("https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png") center/cover;
+}
+.c {
+  background: url("https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png") left top/50px 50px repeat-x;
+}
+.d {
+  background: url("https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png") left top/50px 50px repeat-y;
+}
+.e {
+  background: url("https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png") center/50px 50px no-repeat;
+}
+.f {
+  background: url("https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png") center/50px 50px no-repeat;
+  background-color: red;
+}
+.g{
+  background: url("https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png")left top/200px 50px no-repeat,
+  url("https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png")center/200px 100px no-repeat,
+  url("https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png")left bottom/200px 50px no-repeat;
+
+}
+.h {
+  background: linear-gradient(to right, red, black);
+}
+.i {
+  background: radial-gradient(red, white);
+}
+
+
+  </style>
+
+
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="a">1</td>
+      <td class="b">2</td>
+      <td class="c">3</td>
+    </tr>
+    <tr>
+      <td class="d">4</td>
+      <td class="e">5</td>
+      <td class="f">6</td>
+    </tr>
+    <tr>
+      <td class="g">7</td>
+      <td class="h">8</td>
+      <td class="i">9</td>
+    </tr>
+  </table>
+</body>
+</html>

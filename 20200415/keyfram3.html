@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0; 
+            background-color: black;
+            color: white;
+        }
+       
+
+
+       .ani4{
+           font-size: 10rem;
+           font-family: Arial, Helvetica, sans-serif;
+           text-transform: uppercase;
+           letter-spacing: 1rem;
+           border: 1px solid white;
+           padding: 10px 0 10px 1rem;
+           animation: demo4_text 5s linear infinite , demo4_box 5s  linear infinite;
+           
+           }
+           @keyframes demo4_text{
+            0%,100%{
+                text-shadow:0px 0px 2rem #ff0000ff,0px 0px 2rem #ff000099;}
+                33%{
+                text-shadow:0px 0px 2rem #ff0000ff,0px 0px 2rem #ff000099;}
+                66%{
+                text-shadow:0px 0px 2rem #ff0000ff,0px 0px 2rem #ff000099;}
+                100%{
+                text-shadow:0px 0px 2rem #ff0000ff,0px 0px 2rem #ff000099;}
+               
+            }
+            @keyframes demo4_box{
+                0%{
+                    box-shadow:0px 0px 18px 5px red,0px 0px 18px 5px #ff000000,inset 0px 0px 18px 5px red ;
+                }
+                13%{
+                    box-shadow:0px 0px 18px 5px #f80,0px 0px 18px 5px #ffff0000,inset 0px 0px 18px 5px #f80 ;
+                }
+                26%{
+                    box-shadow:0px 0px 18px 5px #ff0,0px 0px 18px 5px #ff000000,inset 0px 0px 18px 5px #ff0 ;
+                }
+                39%{
+                    box-shadow:0px 0px 18px 5px #0f0,0px 0px 18px 5px #ff000000,inset 0px 0px 18px 5px #0f0 ;
+                }
+                52%{
+                    box-shadow:0px 0px 18px 5px #0f8,0px 0px 18px 5px #ff000000,inset 0px 0px 18px 5px #0f8 ;
+                }
+                65%{
+                    box-shadow:0px 0px 18px 5px #0ff,0px 0px 18px 5px #ff000000,inset 0px 0px 18px 5px #0ff ;
+                }
+                78%{
+                    box-shadow:0px 0px 18px 5px #00f,0px 0px 18px 5px #ff000000,inset 0px 0px 18px 5px #00f ;
+                }
+                81%{
+                    box-shadow:0px 0px 18px 5px #f0f,0px 0px 18px 5px #ff000000,inset 0px 0px 18px 5px #f0f ;
+                }
+                95%{
+                    box-shadow:0px 0px 18px 5px red,0px 0px 18px 5px #ff000000,inset 0px 0px 18px 5px red ;
+                }
+
+
+            }
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+    
+    <div class="ani4">Sct</div>
+</body>
+</html>

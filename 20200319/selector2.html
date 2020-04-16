@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select偽類別</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color: greenyellow;
+        }
+        a:visited{
+            color: grey;
+        }
+        a:hover{
+            color: hotpink;
+        }
+        a:active{
+            color: lightskyblue;
+        }
+        p.one {
+        background-color: limegreen;
+        }
+        p.two {
+        background-color: rgb(236, 77, 236, 50);
+    }
+
+        .occ{
+            color: mediumspringgreen; font-size: 50;
+        }
+
+        h1:not(.odd){ color: mediumorchid; font-size: 90;}
+
+       table {
+           width: 500px;
+           border: 1px ;
+       }
+
+    
+
+/* 如果對a個別設定為類別 建議順序lvha */
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>顏色變化</legend>
+    <a href="http://yahoo.com.tw">Yahoo</a>
+    <a href="http://google.com.tw">Google</a>
+    <a href="http://hotmail.com.tw">Hotmail</a>
+    <a href="http://msn.com.tw">Msn</a>
+    <p class="one">XAMPP is meant only for development purposes. </p>
+    <p class="two">XAMPP is meant only for development purposes. </p>
+    <h1 class="odd">XAMPP is meant only for development purposes. </h1>
+    <h1 class="occ">XAMPP is meant only for development purposes. </h1>
+    <form action="" method="POST" enctype="multipart/form-data">
+    
+        
+            <table>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+    </table>
+    </form>
+</fieldset>
+</body>
+</html>

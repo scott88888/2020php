@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+    .ani1{
+        width: 100px;
+        height:100px;
+        background-color: rgb(111, 218, 253);
+        font-size: 18px;
+        position: relative;
+        /* 影格名稱 */
+        animation-name:demo1;
+        /* 持續時間 */
+        animation-duration: 1s ;
+        /* 速度 */
+        animation-timing-function: ease;
+        /* 延遲 */
+        animation-delay: 1s;
+        /* 次數 */
+        animation-iteration-count: infinite;
+        /* 循環方式 */
+        animation-duration: alternate ;
+        /* 停留 */
+        animation-fill-mode: none;
+    }
+    @keyframes demo1{
+        from{
+            background: rgb(251, 236, 98);
+            right: 500px;
+        }
+        to {
+            background: black;
+            right:800px;
+        }
+    }
+    .ani2{
+        width: 100px;
+        height:100px;
+        background: rgb(111, 218, 253);
+        border-radius: 5px;
+        text-align: center;
+        position: relative;
+        line-height: 50px;
+        overflow: hidden;
+    }
+       .ani2::after{
+           content: "";
+           background:blueviolet;
+           background:linear-gradient(
+            135deg,
+            transparent 30%,
+            black 50%,
+            transparent 70%
+           );
+           position:absolute;
+           width: 100px;
+           height: 50px;
+           left: 0;
+           top: 0;
+           transform: translateX(-100%);
+           animation: demo2 2s linear infinite;
+       }
+       @keyframes demo2{
+           50%{
+               transform: translateX(0%);
+           }
+           70%{
+                transform: translateX(100%);
+           }
+           100%{
+                transform: translateX(100%);
+           }
+       }
+
+
+
+       .ani3{
+           width:100px;
+           position: relative;
+
+       }
+       .ani3::before{
+           content: "";
+           border:1px solid white;
+           position: absolute;
+           left: 0;
+           right: 0;
+           top: 0;
+           bottom: 0;
+
+       }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="ani1">有種想睡的</div>
+    <div class="ani2">有種想睡的2</div>
+    <div class="ani3">有種想睡的3</div>
+</body>
+</html>

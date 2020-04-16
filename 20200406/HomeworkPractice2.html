@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9roll</title>
+    <style>
+      /* 畫框 */
+      .dice{
+        /* 定義大小 */
+        width: 250px ;
+        height: 250px;
+        /* 定義邊框 */
+        border: 1px solid black ;
+        /* 定義四角彎度 */
+        border-radius: 20% ;
+        /* 定義背景 */
+        background:linear-gradient(45deg , white , gray);
+        /* 定義陰影 */
+        box-shadow: 2px 2px 2px black;
+        /* 定義inline */
+        display: inline-block;
+        /* 定義定位 相對定位 */
+        position: relative;
+      }
+      /* 畫點*/
+
+      .point{
+        /* 切成5*5的格子 因此20% */
+        width: 20%;
+        height: 20%;
+        /* 色點背景色 */
+        background: black;
+        /* 色點彎曲角度 50%接近圓形 */
+        border-radius: 50%;
+        /* 定位點 絕對定位 */
+        position: absolute;
+
+      }
+
+      .BgRed{
+        /* 某點為紅色 */
+        background: red;
+      }
+      
+      .at1 {
+        left: 10%;
+        top: 10%;
+}
+      .at2 {
+        left: 10%;
+        top: 40%;
+}
+      .at3 {
+        left: 10%;
+        top: 70%;
+      }
+      .at4  {
+        left: 70% ;
+        top:10% ;
+      }
+      .at5  {
+        left: 70% ;
+        top:40% ;
+      }
+      .at6  {
+        left: 70% ;
+        top:70% ;
+      }
+
+      .at7  {
+        left: 40% ;
+        top: 40% ;
+      }
+        
+       </style>
+    
+
+
+</head>
+<body>
+  <div class="dice">
+    <div class="point at7 BgRed"></div> 
+    
+  </div>
+
+  <div class="dice">
+    <div class="point at1"></div> 
+    <div class="point at6"></div> 
+  </div>
+  <div class="dice">
+    <div class="point at1"></div> 
+    <div class="point at6"></div> 
+    <div class="point at7"></div> 
+  </div>
+    <div class="dice">
+    <div class="point at1"></div> 
+    <div class="point at3"></div> 
+    <div class="point at4"></div> 
+    <div class="point at6"></div> 
+</div>
+  <div class="dice">
+    <div class="point at1"></div> 
+    <div class="point at3"></div> 
+    <div class="point at4"></div> 
+    <div class="point at6"></div> 
+    <div class="point at7"></div>
+  </div>
+  <div class="dice">
+    <div class="point at1"></div> 
+    <div class="point at2"></div> 
+    <div class="point at3"></div> 
+    <div class="point at4"></div> 
+    <div class="point at5"></div>
+    <div class="point at6"></div>
+  </div>
+
+
+
+</body>
+
+</html>

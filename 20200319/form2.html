@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表單練習</title>
+</head>
+
+
+
+
+
+<body>
+    <!-- form表單有兩種方式提交 分別是get跟post 超領域變數 -->
+    <fieldset>
+    <legend>表單介紹</legend>
+<!--     如表單需要設計傳檔案 必須持有屬性 method="POST" enctype="multipart/form-data" -->
+    <form action="" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td width="60">帳號</td>
+                <td width="200"><input type="text" name="acc"></td>
+            </tr>
+            <tr>
+                <td>密碼</td>
+                <td><input type="password" name="pwd" ></td>
+            </tr>
+            <tr>
+                <td>性別</td>
+                <td>
+                    <input type="radio" name="sex" id="M" value="1">
+                    <label for="sexb">男</label>
+                    <input type="radio" name="sex" id="F" value="2">
+                    <label for="sexg">女</label>
+                </td>
+            </tr>
+            <tr>
+                <td>出生</td>
+                <td><input type="datetime-local" name="mail" required></td>
+            </tr>
+            <tr>
+                <td>聯絡信箱</td>
+                <td><input type="email" name="mail" required></td>
+            </tr>
+            <tr>
+                <td>興趣</td>
+                <td>
+                    <input type="checkbox" id="like_1" value="拍照">
+                    <label for="like_1">拍照</label>
+                    <input type="checkbox" id="like_2" value="看書">
+                    <label for="like_2">看書</label>
+                    <input type="checkbox" id="like_3" value="打電動">
+                    <label for="like_3">打電動</label>
+                    <input type="checkbox" id="like_4" value="睡覺">
+                    <label for="like_4">睡覺</label>
+                    <input type="checkbox" id="like_5" value="隨便">
+                    <label for="like_5">隨便</label>
+                </td>
+            </tr>
+            <tr>
+                <td>學歷</td>
+            </tr>
+            <tr>
+                <td>
+                        <select name="school" >
+                        <option value="" selected>選擇</option>
+                        <option value="sss">博士</option>
+                        <option value="ss">碩士</option>
+                        <option value="s">大學</option>
+                        <option value="aa">專科</option>
+                        <option value="a">高中</option>
+                        </select>
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td>照片上傳</td>
+                <td><input type="file" name="pic" ></td>
+            </tr>
+            <tr>
+                <td>留言訊息</td>
+                <td><textarea name="info" cols="20" rows="10">親!!五星好評有紅包</textarea></td>
+            </tr>
+
+            <hr>
+            <tr> 
+                <td colspan="2"> 
+                    <input type="submit" value="送出">
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+    </fieldset>
+
+
+
+
+</body>
+</html>

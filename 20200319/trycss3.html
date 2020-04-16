@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css選擇器的練習</title>
+
+    <style>
+        /* *{
+            font-size: 33px;
+        }         */
+        
+        /* *是全繼承 */
+                
+        h1 {
+            color: red;
+        }
+
+        .clrpink {
+            color: rgb(219, 155, 165);
+        }
+        .size {
+        font-size: x-large;
+        }
+        #black{
+            color: black;
+        }
+        .size, #black{
+            background-color: gray;
+        }
+        h2 {
+            font-size: 50px; background-color: green;
+        }
+        div>p{
+            color: gold;
+        }
+        div>p2{
+            color: rgb(35, 98, 141);
+        }
+        /* 空白算所有子項,  >項目下的子項 */
+
+        div {
+            color: greenyellow;
+        }
+        h2#aa.bb {
+            color: rgb(110, 60, 27);
+        }
+    </style>
+
+</head>
+<!-- class類別 -->
+<!-- .是class #是ID -->
+<body>
+    <h1>Lorem, ipsum dolor sit amet.</h1>
+    <h1 class="clrpink">Lorem, ipsum dolor sit amet.</h1>
+    <h1 class="clrpink size">Lorem, ipsum dolor sit amet.</h1>
+    <h1>Lorem, ipsum dolor sit amet.</h1>
+    <h1 id="black">Lorem, ipsum dolor sit amet.</h1>
+    <h1>Lorem, ipsum dolor sit amet.</h1>
+    <h2>Lorem, ipsum dolor sit amet.</h2>
+    <p>Lorem, ipsum dolor sit amet.</p>
+    <h2 id="aa" class="bb" >Lorem, ipsum dolor sit amet.</h2>
+    <div>
+        <p>Lorem, ipsum dolor sit amet.</p>
+    </div>
+    <div>
+        <p2>Lorem, ipsum dolor sit amet.</p2>
+    </div>
+    <div>Lorem, ipsum dolor sit amet123.</div>
+</body>
+
+</html>
