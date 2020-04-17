@@ -9,7 +9,8 @@
 </style>
 
 <?php
-for ($z = 1; $z < 13; $z++) {
+for ($z = 0; $z < 12; $z++) {
+
 ?>
     <hr>
     <table>
@@ -23,8 +24,10 @@ for ($z = 1; $z < 13; $z++) {
             <td>六</td>
         </tr>
 
+
     <?php
     $year = "2020";
+
     $fDay = "$year-$z-01";
     $fDayWeek = date("w", strtotime($fDay));
     $fDayBS = date("t", strtotime($fDay));
