@@ -32,9 +32,9 @@ for ($z = 1; $z < 13; $z++) {
     echo "第" . $fDayMon . "月有" . $fDayBS . "天";
     for ($i = 0; $i < 5; $i++) {
         echo "<tr>";
-        for ($j = 0; $j < 7; $j++) {
+        for ($j = 0 ; $j < 7; $j++) {
             echo "<td>";
-            $x = ($i * 7 + $j + 1) - $fDayWeek;
+            $x = ($i * 7+ $j + 1) - $fDayWeek;
             if ($x <= 0 || $x > $fDayBS) {
                 echo "&nbsp";
             } else {
