@@ -1,18 +1,35 @@
 <style>
-    table {
-        border: 2px solid black;
-    }
-
-    table td {
-        border: 2px solid black;
-    }
+    body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    border:2px solid black;
+    border-collapse: collapse;
+}
+table td{
+    border:1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+.calendar-block {
+    display: inline-flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
 </style>
-
+<h4 style="text-align:center">月曆</h4>
+<div style="text-align:center">年份:2020</div>
+<div class="wrapper">
 <?php
 for ($z = 1; $z < 13; $z++) {
+    echo  "<div class='calendar-block'>";
 ?>
-    <hr>
-    <table>
+   
+    <table> 
         <tr>
             <td>日</td>
             <td>一</td>
@@ -29,7 +46,7 @@ for ($z = 1; $z < 13; $z++) {
     $fDayWeek = date("w", strtotime($fDay));
     $fDayBS = date("t", strtotime($fDay));
     $fDayMon = date("n", strtotime($fDay));
-    echo "第" . $fDayMon . "月有" . $fDayBS . "天";
+    echo $fDayMon . "月份";
     for ($i = 0; $i < 5; $i++) {
         echo "<tr>";
         for ($j = 0 ; $j < 7; $j++) {
@@ -43,6 +60,11 @@ for ($z = 1; $z < 13; $z++) {
         }
     }
     echo "</tr>";
-    echo "<br>";
-}
+  
     ?>
+    </table>
+    <?php
+echo "</div>";
+}
+?>
+</div>
